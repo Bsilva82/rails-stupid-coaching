@@ -1,6 +1,19 @@
-<h1>Stupid Coaching</h1>
-<%= params[:question] %>
-<h3><i>-You</i></h3>
-<%= @answer %>
-<h3><i>-Your coach</i></h3>
-<%= link_to "Ask a new question", '/ask' %>
+<div class="container">
+  <div id="header">
+    <h1>Stupid Coaching</h1>
+  </div>
+
+  <div id="question">
+    <%= params[:question] %>
+    <h4><i>-You</i></h4>
+  </div>
+  
+  <div id="answer">
+    <%= @answer %>
+    <h4><i>-Your coach</i></h4>
+  </div>
+  
+  <div id="reload">
+    <%= link_to "Ask a new question", '/ask' %>
+  </div>
+</div>
